@@ -2,9 +2,9 @@ import gradio as gr
 import requests
 
 # API settings
-API_KEY = "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"  # غيّرها بمفتاحك الحقيقي
+API_KEY = "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"  
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL_NAME = "mistralai/magistral-medium-2506"  # أو أي موديل تفضله
+MODEL_NAME = "mistralai/magistral-medium-2506"  
 
 def analyze_patient(age, gender, ethnicity, genotype, smoker, history, height_cm, weight_kg, bmi):
     genotype = genotype.lower().replace(" ", "")
